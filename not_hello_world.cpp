@@ -23,7 +23,7 @@ int main()
 	}
 	else
 	{
-		cout << "Go away thing who fails to follow basic instructions!\n"
+		cout << "Go away thing who fails to follow basic instructions!\n";
 	}
 	return 0;
 }
