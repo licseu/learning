@@ -13,6 +13,7 @@ int main ()
   float price=0;
   int quantity=0;
 
+  cout << "Hello worls!!!";
   cout << "Enter price: ";
   getline (cin,mystr);
   stringstream(mystr) >> price;
