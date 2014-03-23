@@ -15,7 +15,7 @@ int main()
 	{
 		cout << "Well I wasn't really expecting that.\n";
 		cout << "So you probably shouldn't expect me to do anything interesting.\n";
-		cout << "After all, I'm not even capable of delivering a decent 'hellow world'.\n";
+		cout << "After all, I'm not even capable of delivering a decent 'hello world'.\n";
 	}	
 	if (x==2)
 	{
