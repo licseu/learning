@@ -2,26 +2,23 @@
 
 // stringstreams
 #include <iostream>
-#include <string>
-#include <sstream>
 
 using namespace std;
 
 int main ()
 {
-  string mystr;
-  float price=0;
-  int quantity=0;
+  float price;
+  float quantity;
+  float totalprice;
 
   cout << "Hello world!!!";
   cout << "Enter price: ";
-  getline (cin,mystr);
-  stringstream(mystr) >> price;
+  cin >> price; cout << endl;
 
   cout << "Enter quantity: ";
-  getline (cin,mystr);
-  stringstream(mystr) >> quantity;
+  cin >> quantity; cout << endl;
 
-  cout << "Total price: " << price*quantity << endl;
+  totalprice=(quantity*price);
+  cout << "Total price: " << totalprice << endl;
   return 0;
 }
