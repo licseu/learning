@@ -17,13 +17,13 @@ int main()
 		cout << "So you probably shouldn't expect me to do anything interesting.\n";
 		cout << "After all, I'm not even capable of delivering a decent 'hello world'.\n";
 	}	
-	if (x==2)
+	else if (x==2)
 	{
 		cout << "Oh cowardly creature! Be gone then!\n";
 	}
 	else
 	{
-		cout << "Go away thing who fails to follow basic instructions!\n"
+		cout << "Go away thing who fails to follow basic instructions!\n";
 	}
 	return 0;
 }
