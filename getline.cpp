@@ -12,6 +12,7 @@ int main ()
   float totalprice;
 
   cout << "Hello world!!!";
+  cout << "Test program!!\n";
   cout << "Enter price: ";
   cin >> price; cout << endl;
 
