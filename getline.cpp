@@ -10,8 +10,8 @@ int main ()
   float price;
   float quantity;
   float totalprice;
-
-  cout << "Hello world!!!";
+  
+  std::cout << "Hello world!!!";
   cout << "Test program!!\n";
   cout << "Enter price: ";
   cin >> price; cout << endl;
