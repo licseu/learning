@@ -1,7 +1,8 @@
 
 
-// stringstreams
+// strings and if's
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -10,9 +11,12 @@ int main ()
   float price;
   float quantity;
   float totalprice;
+  string yourName;
 
-  cout << "Hello world!!!\n";
-  cout << "Test program!!\n";
+  cout << "Please enter your name:\n";
+  cin >> yourName;
+
+  cout << "Hello " << yourName << "!\n\n";
   cout << "Enter price: ";
   cin >> price; cout << endl;
 
@@ -23,9 +27,10 @@ int main ()
 
   if (totalprice>=100)
   {
-    cout << "That's too much!";
+    cout << "That's too much " << yourName << "!\n";
   }
   else
-  cout << "Total price: " << totalprice << endl;
+  cout << "Hi " << yourName << ", the total price is " << totalprice << endl;
+  
   return 0;
 }
