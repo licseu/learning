@@ -7,7 +7,7 @@ using namespace std;
 
 int main ()
 {
-    //input part
+    	//input part
 	string x;
 	ofstream thing;
 	cout << "Type a note to save in the text file:\n";
@@ -24,6 +24,7 @@ int main ()
 	thing << "--------------------\n";
 	thing << x << "\n\n\n";
 	thing.close(); 
+	
 	cout << "See stuff.txt to view your note!\n" << endl;
 	getchar();
 	return 0;
