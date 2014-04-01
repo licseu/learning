@@ -19,9 +19,32 @@ int main ()
 
 	//write to file part
 	thing.open ("stuff.txt", ios::app);
-	thing << ltm->tm_mday << "/" << 1 + ltm->tm_mon << "/" << 1900 + ltm->tm_year << " - ";
-	thing << 1 + ltm->tm_hour << ":" << 1 + ltm->tm_min << ":" << 1 + ltm->tm_sec << "\n";
-	thing << "--------------------\n";
+	if (ltm->tm_mday < 10)
+	{
+		thing << "0";
+	}
+	thing << ltm->tm_mday << "/";
+	if (1 + ltm->tm_mon < 10)
+	{
+		thing << "0";
+	}
+    	thing << 1 + ltm->tm_mon << "/" << 1900 + ltm->tm_year << " - ";
+ 	if (1 + ltm->tm_hour < 10)
+	{
+		thing << "0";
+	}   
+	thing << 1 + ltm->tm_hour << ":";
+	if (1 + ltm->tm_min < 10)
+	{
+		thing << "0";
+	}
+    	thing << 1 + ltm->tm_min << ":";
+	if (1 + ltm->tm_sec < 10)
+	{
+		thing << "0";
+	}
+    	thing << 1 + ltm->tm_sec << "\n";
+	thing << "---------------------\n";
 	thing << x << "\n\n\n";
 	thing.close(); 
 	
@@ -29,5 +52,3 @@ int main ()
 	getchar();
 	return 0;
 }
-
-
