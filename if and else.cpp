@@ -13,11 +13,11 @@ int main ()
   float numTotal;
   string method;
 
+  cout << "Hello world!\n";
   cout << "First number: "; cin >> numOne;
   cout << "\n+ - / * ?"; 
   cin >> method;
   cout << "\nLast number: "; cin >> numTwo;
-
   if (method=="+")
   {
     numTotal=numOne+numTwo;
