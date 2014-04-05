@@ -13,7 +13,7 @@ int main ()
   float numTotal;
   string method;
 
-  cout << "Hello world!\n";
+  cout << "Hello worldddddddddd!\n";
   cout << "First number: "; cin >> numOne;
   cout << "\n+ - / * ?"; 
   cin >> method;

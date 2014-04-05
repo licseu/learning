@@ -1,5 +1,4 @@
 
-
 // strings and if's
 #include <iostream>
 #include <string>

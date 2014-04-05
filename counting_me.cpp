@@ -1,3 +1,4 @@
+
 #include <iostream>
 
 using namespace std;
@@ -9,9 +10,12 @@ int main ()
         if (x == 1)
         {
                 cout << x << " silly Ezhh.\n";
-                cout << "Very nice Ezhh.\n";
+
+                cout << Very nice Ezhh.\n";
+
                 x++;
         }
+        
 
         while (x < 11)
         {
