@@ -11,7 +11,7 @@ int main ()
         {
                 cout << x << " silly Ezhh.\n";
 
-                cout << Very nice Ezhh.\n";
+                cout << "Very nice Ezhh.\n";
 
                 x++;
         }
