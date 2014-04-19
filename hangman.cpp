@@ -6,13 +6,14 @@ using namespace std;
 
 int main ()
 {
-    int choice, x;
-    cout << "HANGMAN!\n Choose your difficulty level!\n\n";
+    int x;
+    cout << "HANGMAN!\nChoose your difficulty level!\n\n";
     cout << "Easy [1], Medium [2], Hard [3]\n\n";
-    cin >> choice;
+    cin >> x;
 
-    x = choice-1;
+    x = x-1;
 
+    //wordlist
     string words [3] [3] =
         {
             "easyone", "easytwo", "easythree",
@@ -20,9 +21,12 @@ int main ()
             "hardone", "hardtwo", "hardthree"
         };
 
-    //test, will delete when I finish
-    cout << words [x] [0];
+    //random selection from chosen difficulty
+    srand (time(NULL));
+    int y = rand() % 3; //note: value here must change each time wordlist expands
 
+    //chosen word
+    string word = words [x] [y];
 
 	return 0;
 }
