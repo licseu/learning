@@ -1,20 +1,27 @@
 #include <iostream>
-#include <fstream>
-#include <random>
+#include <cstdlib>
+#include <string>
 
 using namespace std; 
 
 int main ()
 {
-	char word;
+    int choice, x;
+    cout << "HANGMAN!\n Choose your difficulty level!\n\n";
+    cout << "Easy [1], Medium [2], Hard [3]\n\n";
+    cin >> choice;
 
+    x = choice-1;
 
+    string words [3] [3] =
+        {
+            "easyone", "easytwo", "easythree",
+            "medone", "medtwo", "medthree",
+            "hardone", "hardtwo", "hardthree"
+        };
 
-
-
-
-
-
+    //test, will delete when I finish
+    cout << words [x] [0];
 
 
 	return 0;
@@ -81,6 +88,3 @@ void HangMan(int variable)
            
 }  
 
-//just committing this so we can get started. 
-//part I am working on will be in main for now as it will be the first thing needed.
-//feel free to add to this & add includes you need.
