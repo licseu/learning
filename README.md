@@ -1,4 +1,4 @@
 learning
 ========
 
-Our programming learning experience.
+C++ Programming Basics. With examples from daily work or questions.
